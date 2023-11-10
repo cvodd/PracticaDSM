@@ -49,14 +49,14 @@ public class DashboardFragment extends Fragment {
                 obtenerDatos();
             }
         });
-        /*binding.btnAnterior.setOnClickListener(new View.OnClickListener() {
+        binding.btnAnterior.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment= HomeFragment;
+
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.container, fragment).commit();
+                transaction.replace(R.id.container, new HomeFragment()).commit();
             }
-        });*/
+        });
         return root;
     }
 

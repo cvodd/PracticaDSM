@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
 import java.util.ArrayList;
@@ -56,13 +57,14 @@ public class HomeFragment extends Fragment {
                 agregarLista();
             }
         });
-       /* binding.siguiente.setOnClickListener(new View.OnClickListener() {
+        binding.siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getContext(), DashboardFragment.class);
-                startActivity(intent);
+
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.container, new DashboardFragment()).commit();
             }
-        });*/
+        });
 
         listView.setClickable(true);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
