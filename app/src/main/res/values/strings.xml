@@ -3,4 +3,13 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="nombre">Nombre</string>
+    <string name="agregar">Agregar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="buscar">Buscar</string>
+    <string name="guardar">Guardar</string>
+    <string name="rut">Rut</string>
+    <string name="nombrer">NombreR</string>
+    <string name="edad">Edad</string>
 </resources>
